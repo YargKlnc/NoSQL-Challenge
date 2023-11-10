@@ -34,19 +34,19 @@ Part 1: Database and Jupyter Notebook Set Up
 
 Part 2: Updating the Database
 
-The magazine editors have some requested modifications for the database:
+The magazine editors had some requested modifications for the database:
 
 
-    1.An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked to include in the analysis
+    1.An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked to include in the analysis.
 
 
-    2.BusinessTypeID for "Restaurant/Cafe/Canteen" was founded and returned only the BusinessTypeID and BusinessType fields
+    2.BusinessTypeID for "Restaurant/Cafe/Canteen" was founded and returned only the BusinessTypeID and BusinessType fields.
 
 
-    3.The new restaurant was updated with the BusinessTypeID 
+    3.The new restaurant was updated with the BusinessTypeID.
 
 
-    4.The magazine is not interested in any establishments in Dover, so how many documents contain the Dover Local Authority was checked. Any establishments were removed within the Dover Local Authority from the database, and the number of documents were checked to         ensure they were deleted
+    4.The magazine was not interested in any establishments in Dover, so number of documents that contain the Dover Local Authority was checked. Any establishments were removed within the Dover Local Authority from the database, and the number of documents were checked     to ensure they were deleted.
 
 
     5.Some of the number values are stored as strings, when they should be stored as numbers.
