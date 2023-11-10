@@ -1,10 +1,12 @@
-# NoSQL-Challenge
-# UofT Data Analytics by YK
+# NoSQL Challenge 
+
+UofT Data Analytics NoSQL Challenge by YK
 
 ![image](https://github.com/YargKlnc/NoSQL-Challenge/assets/142269763/1a2afaab-d943-4cec-a210-f426e6c40b0d)
 
 ### Instructions
-The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. This work has been completed for the editors of a food magazine; 'Eat Safe, Love', to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
+
+**The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. This work has been completed for the editors of a food magazine; 'Eat Safe, Love', to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.**
 
 
 
