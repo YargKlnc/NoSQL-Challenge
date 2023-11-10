@@ -10,51 +10,50 @@ The UK Food Standards Agency evaluates various establishments across the United 
 
 Part 1: Database and Jupyter Notebook Set Up
 
-
-    1.	Import the data provided in the establishments.json file from your Terminal. Name the database uk_food and the collection establishments. Copy the text you used to import your data from your Terminal to a markdown cell in your notebook.
-
-    
-    2.	Within your notebook, import the libraries you need: PyMongo and Pretty Print (pprint).
+    1.The data provided in the establishments.json file imported from Terminal. The database uk_food and the collection establishments were named. The text used to import the data was copied from Terminal
 
     
-    3.	Create an instance of the Mongo Client.
+    2.PyMongo and Pretty Print (pprint) libraries were imported
 
     
-    4.	Confirm that you created the database and loaded the data properly:
+    3.An instance of the Mongo Client was created
+
+    
+    4.Created database and properly loaded data were confirmed:
         
-        o	List the databases you have in MongoDB. Confirm that uk_food is listed.
+        o	The databases in MongoDB were listed. Confirmed that uk_food was listed
         
-        o	List the collection(s) in the database to ensure that establishments is there.
+        o	Collection(s) in the database were listed to ensure that establishments were there
         
-        o	Find and display one document in the establishments collection using find_one and display with pprint.
+        o	One document was found and displayed in the establishments collection using find_one and displayed with pprint
 
 
-    5.	Assign the establishments collection to a variable to prepare the collection for use.
+    5.Assign the establishments collection to a variable to prepare the collection for use.
 
 
 
-Part 2: Update the Database
-
+Part 2: Updating the Database
 
 The magazine editors have some requested modifications for the database:
 
-    1.	An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis.
+
+    1.An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked to include in the analysis
 
 
-    2.	Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
+    2.BusinessTypeID for "Restaurant/Cafe/Canteen" was founded and returned only the BusinessTypeID and BusinessType fields
 
 
-    3.  Update the new restaurant with the BusinessTypeID you found
+    3.The new restaurant was updated with the BusinessTypeID 
 
 
-    4.  The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they            were deleted
+    4.The magazine is not interested in any establishments in Dover, so how many documents contain the Dover Local Authority was checked. Any establishments were removed within the Dover Local Authority from the database, and the number of documents were checked to         ensure they were deleted
 
 
-    5.  Some of the number values are stored as strings, when they should be stored as numbers.
+    5.Some of the number values are stored as strings, when they should be stored as numbers.
         
-        1.	Use update_many to convert latitude and longitude to decimal numbers.
+        1.	Update_many was used to convert latitude and longitude to decimal numbers
         
-        2.	Use update_many to convert RatingValue to integer numbers.
+        2.	Update_many was used to convert RatingValue to integer numbers
 
 
 
@@ -62,7 +61,7 @@ Part 3: Exploratory Analysis
 
 'Eat Safe, Love' magazine had specific questions they need to get answered, which will help them find the locations they wish to visit and avoid.
 
-    Some notes that were taken into consideration while exploring the dataset:
+    Below were taken into consideration while exploring the dataset:
     
 •	RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 o	Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
