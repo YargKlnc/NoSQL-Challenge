@@ -72,11 +72,11 @@ Part 3: Exploratory Analysis
 
     Below were taken into consideration to answer the 4 questions in below:
     
-        •	Use count_documents to display the number of documents contained in the result.
+        •	Count_documents was used to display the number of documents contained in the result.
 
-        •	Display the first document in the results using pprint.
+        •	The first document in the results was displayed using pprint.
 
-        •	Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+        •	The result was converted to a Pandas DataFrame, and the number of rows in the DataFrame was printed, and the first 10 rows was displayed.
 
                 1.	Which establishments have a hygiene score equal to 20?
 
