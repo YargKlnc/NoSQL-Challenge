@@ -6,7 +6,9 @@
 The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. This work has been completed for the editors of a food magazine; 'Eat Safe, Love', to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
 
 
+
 Part 1: Database and Jupyter Notebook Set Up
+
 
     1.	Import the data provided in the establishments.json file from your Terminal. Name the database uk_food and the collection establishments. Copy the text you used to import your data from your Terminal to a markdown cell in your notebook.
 
@@ -27,6 +29,7 @@ Part 1: Database and Jupyter Notebook Set Up
 
 
     5.	Assign the establishments collection to a variable to prepare the collection for use.
+
 
 
 Part 2: Update the Database
