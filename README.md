@@ -10,13 +10,13 @@ The UK Food Standards Agency evaluates various establishments across the United 
 
 Part 1: Database and Jupyter Notebook Set Up
 
-    1.The data provided in the establishments.json file imported from Terminal. The database uk_food and the collection establishments were named. The text used to import the data was copied from Terminal
+    1.The data provided in the establishments.json file imported from Terminal. The database uk_food and the collection establishments were named. The text used to import the data was copied from Terminal.
 
     
-    2.PyMongo and Pretty Print (pprint) libraries were imported
+    2.PyMongo and Pretty Print (pprint) libraries were imported.
 
     
-    3.An instance of the Mongo Client was created
+    3.An instance of the Mongo Client was created.
 
     
     4.Created database and properly loaded data were confirmed:
@@ -46,7 +46,8 @@ The magazine editors had some requested modifications for the database:
     3.The new restaurant was updated with the BusinessTypeID.
 
 
-    4.The magazine was not interested in any establishments in Dover, so number of documents that contain the Dover Local Authority was checked. Any establishments were removed within the Dover Local Authority from the database, and the number of documents were checked     to ensure they were deleted.
+    4.The magazine was not interested in any establishments in Dover, so number of documents that contain the Dover Local Authority was checked. Any establishments were removed within the Dover Local Authority from the database, and the number of documents were checked
+    to ensure they were deleted.
 
 
     5.Some of the number values are stored as strings, when they should be stored as numbers.
@@ -63,22 +64,26 @@ Part 3: Exploratory Analysis
 
     Below were taken into consideration while exploring the dataset:
     
-•	RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
-o	Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
-•	The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
-Use the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
-Unless otherwise stated, for each question:
-•	Use count_documents to display the number of documents contained in the result.
-•	Display the first document in the results using pprint.
-•	Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+        •	RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 
-1.	Which establishments have a hygiene score equal to 20?
+        •	The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 
-2.	Which establishments in London have a RatingValue greater than or equal to 4?
-    Hint: The London Local Authority has a longer name than "London" so you will need to use $regex as part of your search.
+    Below were taken into consideration to answer the 4 questions in below:
+    
+        •	Use count_documents to display the number of documents contained in the result.
 
-3.	What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
-Hint: You will need to compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
+        •	Display the first document in the results using pprint.
 
-4.	How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
-Hint: You will need to use the aggregation method to answer this.
+        •	Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+
+                1.	Which establishments have a hygiene score equal to 20?
+
+                2.	Which establishments in London have a RatingValue greater than or equal to 4?
+
+                3.	What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+
+                4.	How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
+
+### References 
+
+
